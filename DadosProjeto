@@ -1,0 +1,386 @@
+Dados Operacionais da Usina
+Capacidade de alimentação (base seca): 4,0 milhões t/a
+Teor médio de cobre na alimentação: 0,86%
+Teor de cobre no concentrado (médio): 29,5%
+Recuperação metalúrgica: 95,2%
+Recuperação em massa: 4,0%
+Capacidade de produção de concentrado: 161.290 tpa
+
+Alimentador de Sapatas (3110-FE-001)
+Alimentação: Silo
+Modelo: FE-001 (MDE)
+Dimensões: 1,80m x 10,4m
+Velocidade: 0,03 a 0,05 m/s
+Potência instalada: 37 Kw
+Inclinação: 18°
+Descarga: Grelha vibratória
+Densidade aparente: 1.70 t/m³
+Taxa de alimentação nominal: 652 t/h
+Taxa de alimentação de projeto: 806 t/h
+Granulometria: <1000 mm
+
+Grelha Vibratória (3110-GZ-002)
+Alimentação: Alimentador de sapatas
+Modelo: M4018 (Metso)
+Dimensões: 4m x 1,80m
+Abertura: 150 mm
+Frequência: 12,5 rpm
+Undersize: CV - 001
+Oversize: Britador primário
+
+Britador Primário (3110-CR-001)
+Alimentação: Grelha vibratória
+Modelo: C160 (Metso)
+Dimensões: 1600mm x 1200mm
+Tamanho máximo de alimentação: 960 mm
+Movimento do queixo: 41 mm
+APF: 150 mm
+Descarga: CV - 001
+Densidade real: 3.00 t/m³
+Densidade aparente: 1,7 t/m³
+WI Bond: 18.6 kwh/t
+Taxa de alimentação nominal: 423 t/h
+Taxa de alimentação de projeto: 599 - 2.133 t/h
+F80: 265 mm
+P80: 178 mm
+
+Peneiramento Secundário (3610-SC-001)
+Alimentação: CV - 001
+Modelo: XH8x16DD (Metso)
+Dimensões: 6,10m x 1,83m
+Abertura 1º Deck: 80 mm
+Abertura 2º Deck: 40 mm
+Inclinação: 20°
+Descarga: CV - 002
+Densidade real: 3.00 t/m³
+Densidade aparente: 1,7 t/m³
+Índice de abrasividade: 0.427 a 0.536
+Taxa de alimentação nominal: 652 t/h
+Taxa de alimentação de projeto: 782 t/h
+Taxa Oversize 1º Deck nominal: 451 t/h
+Taxa Oversize 1º Deck de projeto: 541 t/h
+Taxa Oversize 2º Deck nominal: 96 t/h
+Taxa Oversize 2º Deck de projeto: 116 t/h
+Taxa passante peneira nominal: 105 t/h
+Taxa passante peneira de projeto: 126 t/h
+F80: 200 mm
+P80: 35 mm
+Eficiência do peneiramento: 92%
+Umidade do material: < 4%
+
+Britagem Secundária (3510-CR-002)
+Alimentação: BN - 021 (Silo 55 m³)
+Modelo: HP6 (Metso)
+Diâmetro do cone: 1.400 mm
+Tamanho máximo de alimentação: 300 mm
+APF: 35-40 mm
+Tipo de bojo: Aço carbono
+Descarga: CV - 002
+Densidade real: 3.00 t/m³
+Densidade aparente: 1,7 a 2,1 t/m³
+Índice de abrasividade: 0.427 a 0.536
+Taxa de alimentação nominal: 547 t/h
+Taxa de alimentação de projeto: 656 t/h
+F80: 200 mm
+P80: 54 mm
+
+Britagem Terciária (3520-CR-003 e 004)
+Alimentação: BN - 003 (Silo 70m³).
+Modelo: HP6 (Metso).
+Diâmetro do cone: 1400 mm.
+Tamanho máximo de alimentação: 85 mm.
+APF: 16 mm.
+Tipo de bojo: Aço carbono.
+Descarga: CV - 002.
+Densidade real: 3.00 t/m³.
+Densidade aparente: 1,7 a 2,1 t/m³.
+Índice de abrasividade: 0.427 a 0.536.
+Taxa de alimentação nominal: 631 t/h.
+Taxa de alimentação de projeto: 757 t/h.
+F80: 58 mm.
+P80: 16 mm.
+
+Peneiramento Terciário (3620-SC-002 e 03)
+Alimentação: CV - 002.
+Modelo: SH8x20DD (Metso).
+Dimensões: 6,10m x 2,44m.
+Abertura 1º Deck: 28 mm.
+Abertura 2º Deck: 16 mm.
+Inclinação: 20°.
+Descarga: CV - 004.
+Densidade real: 3.00 t/m³.
+Densidade aparente: 1,7 a 2,1 t/m³.
+Índice de abrasividade: 0.427 a 0.536.
+Taxa de alimentação nominal: 1.284 t/h.
+Taxa de alimentação de projeto: 1.541 t/h.
+Taxa Oversize 1º Deck nominal: 266 t/h.
+Taxa Oversize 1º Deck de projeto: 319 t/h.
+Taxa Oversize 2º Deck nominal: 50 t/h.
+Taxa Oversize 2º Deck de projeto: 60 t/h.
+Taxa passante peneira nominal: 652 t/h.
+Taxa passante peneira de projeto: 782 t/h.
+F80: 58 mm.
+P80: 9,5 mm.
+Eficiência do peneiramento: 92%.
+Umidade do material: < 4%.
+Pilha Pulmão (Pilha de britado)
+Alimentação: CV - 004.
+Capacidade: 32.200 ton.
+Tempo de Operação: 18 horas.
+Top size: 12,5 mm.
+P80: 9,5mm.
+Umidade: 3%.
+Densidade aparente: 1.7.
+Descarga: CV - 005.
+
+Moagem (4110 – ML – 001)
+Alimentação: CV - 005.
+Fabricante: FLSmidth.
+Dimensões: 22' x 41,5'.
+Potência instalada: 11.000 kW.
+Trommel: 12x45 mm.
+Descarga: Overflow.
+Densidade real: 3.00 t/m³.
+WI Bond: 18.60.
+Índice de abrasividade: 0.427 a 0.536.
+Taxa de alimentação: 496 t/h.
+F80: 9,5 mm.
+P80: 106um.
+% sólidos: 75%.
+
+Classificação Moagem (4160 – CY – 001)
+Alimentação: Caixa de Polpa.
+Modelo: 500CVX (Weir).
+Diâmetro: 20".
+Quantidade: 10 (9+1).
+Vortex: 140 mm.
+Apex: 110 mm.
+Válvula pneumática: 3.
+Densidade real: 3.00 t/m³.
+Taxa de alimentação: 2.382 t/h.
+Taxa OF: 602 t/h.
+Taxa UF: 1780 t/h.
+% Sólidos Feed: 55%.
+% Sólidos OF: 30.6%.
+% Sólidos UF: 75%.
+Pressão: 1.80 kgf/cm².
+Densidade polpa Feed: 1,58 t/m³.
+Densidade polpa OF: 1,26 t/m³.
+Densidade polpa UF: 2,00 t/m³.
+D50: 76 µm.
+P80: 106 µm.
+
+Condicionamento (4230 – TK – 001)
+Alimentação: OF Cyclone.
+Volume: 43 m³.
+Dosagem DTF: 35 g/t.
+Dosagem CAL: 750 g/t.
+Tempo de residência: 2 min.
+% sólidos: 30.6%.
+Densidade de sólidos: 3,00 t/m³.
+Densidade de polpa: 1,26 t/m³.
+Vazão: 1293 m³/h.
+
+Flotação Rougher (4230 – FC – 001/006)
+Alimentação: Condicionamento.
+Modelo: Tank Cell (Metso).
+Volume: 130m³.
+Quantidade: 6.
+Dosagem de espumante: 20 g/t.
+Tempo de residência: 26 min.
+% sólidos: 30.6%.
+Densidade de sólidos: 3,00 t/m³.
+Densidade de polpa: 1,26 t/m³.
+Água de spray: 28 m³/h.
+Concentrado: Classificação remoagem.
+Rejeito: Flotação de pirita.
+
+Classificação Remoagem (4240 – CY – 002)
+Alimentação: Caixa de Polpa.
+Modelo: 250CVX6 (Weir).
+Diâmetro: 10".
+Quantidade: 4 (3+1).
+Vortex: 100 mm.
+Apex: 59 mm.
+Válvula pneumática: 2.
+Densidade real: 4.00 t/m³.
+Taxa de alimentação: 96 t/h.
+Taxa OF: 24.73 t/h.
+Taxa UF: 71.27 t/h.
+% Sólidos Feed: 31.8%.
+% Sólidos OF: 13.5%.
+% Sólidos UF: 60%.
+Pressão: 0.85 kgf/cm².
+Densidade polpa Feed: 1.31 t/m³.
+Densidade polpa OF: 1.11 t/m³.
+Densidade polpa UF: 1.82 t/m³.
+D50: 21.7 µm.
+P80: 20 µm.
+
+Remoagem (4240 – ML – 002)
+Alimentação: UF - Cyclone.
+Fabricante: HIG2500/15000 (Metso).
+Potência instalada: 2500 kW.
+Volume interno: 11,4 m³.
+Descarga: 1° Jameson.
+Densidade de sólidos: 4.00 t/m³.
+WI Bond: 18.60 kwh/t.
+Taxa de alimentação nominal: 54 t/h.
+Taxa de alimentação de projeto: 198 t/h.
+F80: 78 µm.
+P80: 20 µm.
+Diâmetro de bolas: 4 mm.
+Densidade das bolas: 4,5 g/cm³.
+% sólidos: 45%.
+Densidade de polpa: 1,51 t/m³.
+
+Flotação Cleaner Scalper (Jameson) (4230 – FC – 010)
+Alimentação: Remoagem.
+Modelo: Jameson Cell (glencore).
+Aeração: Ar atmosférico.
+Downcomer: 10.
+Quantidade: 1.
+% sólidos: 16.4%.
+Densidade de sólidos: 4,00 t/m³.
+Densidade de polpa: 1,14 t/m³.
+Água de spray: 30,9 m³/h.
+Concentrado: Espessador.
+Rejeito: Cleaner.
+
+Flotação Cleaner (4230 – FC – 011/012/013)
+Alimentação: Rejeito 1° Jameson.
+Modelo: Tank Cell (Metso).
+Volume: 50m³.
+Quantidade: 3.
+Dosagem de Cal: 100 g/t.
+% sólidos: 14.8%.
+Densidade de sólidos: 4,00 t/m³.
+Densidade de polpa: 1,12 t/m³.
+Fluxo: 83 t/h.
+Concentrado: 2° Jameson.
+Rejeito: Scavenger.
+
+Flotação Cleaner-Scavenger (4230 – FC – 018/019/020)
+Alimentação: Rejeito Cleaner.
+Modelo: Tank Cell (Metso).
+Volume: 50m³.
+Quantidade: 3.
+Dosagem DTF: 5 g/t.
+% sólidos: 12.2%.
+Densidade de sólidos: 4,00 t/m³.
+Densidade de polpa: 1,10 t/m³.
+Fluxo: 60 t/h.
+Concentrado: Remoagem.
+Rejeito: Flotação de Pirita.
+
+Flotação Recleaner (Jameson) (4230 – FC – 025)
+Alimentação: Concentrado Cleaner.
+Modelo: Jameson Cell (glencore).
+Aeração: Ar atmosférico.
+Downcomer: 8.
+Quantidade: 1.
+% sólidos: 13.6%.
+Densidade de sólidos: 4,00 t/m³.
+Densidade de polpa: 1,11 t/m³.
+Água de spray: 15 m³/h.
+Concentrado: Espessador.
+Rejeito: Cleaner.
+
+Espessamento de Concentrado (4250 – TH – 001)
+Alimentação: Concentrados Jameson.
+Modelo: HIGH RAKE (Metso).
+Diâmetro: 8m.
+Altura: 2m.
+Quantidade: 1.
+Dosagem de floculante nominal: 50 g/t.
+% sólidos Feed nominal: 21.0%.
+% sólidos UF nominal: 70.0%.
+Top Size: 40 um.
+Densidade de sólidos: 4,30 t/m³.
+Densidade de polpa: 1,19 t/m³.
+Água de Spray: 9 m³/h.
+Taxa de Alimentação nominal: 20 t/h.
+Taxa de Alimentação de projeto: 24 t/h.
+Taxa de polpa nominal: 76 m³/h.
+Taxa de polpa de projeto: 91,2 m³/h.
+UF: Tanque Alimentação Filtro.
+OF: Tanque água de processo.
+
+Filtragem Concentrado (4260 – FL – 001)
+Alimentação: UF Espessador.
+Modelo: ME 2000 (Diemme).
+Dimensão da placa: 2m x 2m.
+Quantidade de placas: 31.
+Quantidade de filtro: 1.
+% sólidos Feed: 55.0%.
+Densidade de sólidos: 1,62 t/m³.
+Densidade de torta: 2,60 t/m³.
+Taxa de Alimentação nominal: 20 t/h.
+Taxa de Alimentação de projeto: 24 t/h.
+Umidade da torta: 8%.
+Tempo de ciclo esperado: 18,5min.
+
+Flotação de Pirita (4230 – FC – 026/031)
+Alimentação: Condicionamento.
+Modelo: Tank Cell (Metso).
+Volume: 130m³.
+Quantidade: 6.
+Dosagem de espumante: 20 g/t.
+Tempo de residência: 20 min.
+% sólidos: 24.8%.
+Densidade de sólidos: 2,96 t/m³.
+Densidade de polpa: 1,20 t/m³.
+Concentrado: Sump de Pirita.
+Rejeito: Espessador.
+
+Tanque Condicionador (4230 – TK – 021/022)
+Alimentação: Rejeito Rougher/Scavenger.
+Volume: 53 m³.
+Quantidade: 2.
+Dosagem H2SO4: 560 g/t.
+Dosagem PAX: 55 g/t.
+Tempo de residência: 2 min.
+% sólidos: 24.8%.
+Densidade de sólidos: 2,96 t/m³.
+Densidade de polpa: 1,20 t/m³.
+Vazão: 1602 m³/h.
+
+Espessamento Rejeito (4280 – TH – 002)
+Dosagem de floculante nominal: 5 g/t.
+% sólidos Feed nominal: 20.0%.
+% sólidos UF nominal: 55.0%.
+Densidade de sólidos: 2,88 t/m³.
+Densidade de polpa: 1,15 t/m³.
+Taxa de Alimentação nominal: 424 t/h.
+Taxa de Alimentação de projeto: 509 t/h.
+Taxa de Polpa nominal: 1.491 m³/h.
+Taxa de Polpa de projeto: 2.212 m³/h.
+UF: Tanque Alimentação Filtro.
+OF: Tanque água de processo.
+
+Peneira linear de segurança (PNL-6)
+Modelo: PNL-6 (WesTech).
+Dimensões: 3,73m x 1,97m.
+Área útil: 6m².
+Abertura: 1,2 a 1,5 mm.
+Alimentação: Rejeito da Pirita.
+Modelo: HIGH RAKE (Metso).
+Diâmetro: 35m.
+Altura: 2,8m.
+Quantidade: 1.
+
+Filtragem de Rejeito (4260 – FL – 002/003/04)
+Tanque de alimentação do filtro: 5800-TK-007.
+Dimensões do tanque: 15m x 13,5m.
+Alimentação: UF Espessador.
+Modelo: GHT 2500 (Diemme).
+Dimensão da Placa: 3,05m x 2,64m.
+Quantidade de placas: 111.
+Quantidade de filtro: 3.
+% sólidos Feed: 55.0 %.
+Densidade de sólidos: 1,56 t/m³.
+Densidade de torta: 2,15 t/m³.
+Taxa de Alimentação nominal: 424 t/h.
+Taxa de Alimentação de projeto: 509 t/h.
+Umidade da torta: 12 %.
+Tempo de ciclo esperado: 15 min

@@ -2,166 +2,163 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Escala 4x4 Completa - Ero Brasil - Tucumã</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operação de Beneficiamento Ero Brasil Tucumã</title>
+
 <style>
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f6f9;
-  margin: 0;
-  padding: 20px;
-  color: #333;
-}
-    h1 { text-align: center; margin-top: 2px; margin-bottom: 1px; font-weight: bold; font-size: 30px; font-family: Arial Black; color: #2A8C89; }
+body { font-family: Arial, sans-serif; background: #FFFFFF; margin: 0; padding: 20px; }
+h1 { text-align: center; margin-top: 2px; margin-bottom: 1px; font-weight: bold; font-size: 30px; font-family: Arial Black; color: #2A8C89; }
+h2 { text-align: center; margin-top: 1px; margin-bottom: 2px; color: #333; }
+h3 { text-align: center; margin-top: 8px; margin-bottom: 10px; color: #333; }
+.buttons { display: flex; flex-direction: column; gap: 10px; max-width: 600px; margin: auto; }
+button.section-btn { padding: 24px 20px; font-size: 17px; border: none; border-radius: 18px; background: #2A8C89; color: #fff; font-weight: bold; cursor: pointer; text-align: center; transition: 0.3s; }
+button.section-btn:hover { background: #54544A; }
+@keyframes highlight { 0% { background-color: #ffeb3b; } 50% { background-color: #2A8C89; } 100% { background-color: #2A8C89; } }
+.highlight { animation: highlight 1.5s ease; }
 
-    h2 { text-align: center; margin-top: 1px; margin-bottom: 2px; color: #333; }
+.modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); padding-top: 100px; overflow: auto; box-shadow: 0px 8px 24px rgba(0,0,0,0.25); }
+.modal-content { background: #fff; margin: auto; padding: 20px; border-radius: 10px; width: 80%; max-width: 700px; max-height: 80vh; overflow-y: auto; overflow-x: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.3); animation: slideDown 0.4s ease; }
+@keyframes slideDown { from { opacity: 0; transform: translateY(-50px); } to { opacity: 1; transform: translateY(0); } }
+.modal h2 { margin-top: 0; color: #333; font-size: 20px; }
+.close { float: right; font-size: 22px; cursor: pointer; color: #333; }
 
-    h3 { text-align: center; margin-top: 8px; margin-bottom: 10px; color: #333; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 15px; }
+td { padding: 6px 8px; border-bottom: 1px solid #ddd; vertical-align: center; }
+td:first-child { font-weight: bold; width: 65%; color: #1e40af; }
 
-.input-area { text-align:center; margin-bottom:20px; }
-input { padding:8px; font-size:16px; margin:5px; }
-
-/* Tabela principal */
-.tabela {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: center;
-  font-size: 15px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-.tabela th, .tabela td { border: 1px solid #ccc; padding: 6px; }
-.tabela th {
-  background: #2196F3;
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-.status-D { background: #FFF59D; } /* Dia */
-.status-N { background: #90CAF9; } /* Noite */
-.status-F { background: #E0E0E0; } /* Folga */
-
-/* Créditos fixos ao final */
-.creditos {
-  text-align: center;
-  margin-top: 40px;
-  padding: 20px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  color: #333;
-}
-.creditos h2 { color: #2196F3; margin-bottom: 10px; }
-.creditos p { margin: 5px 0; font-size: 15px; }
+#errorMsg { text-align: center; color: red; font-weight: bold; margin-bottom: 10px; }
 </style>
 </head>
+
 <body>
+<h1>ERO BRASIL</h1>
+<h2>Tucumã</h2>
+<h3>Dados de Projeto da Usina</h3>
 
-<div style="text-align:center; margin-bottom:10px;">
-    <img src="./logoERO.png" alt="Logo ERO Brasil" style="max-width:200px; height:auto;">
+<div id="errorMsg"></div>
+<div class="buttons" id="buttons">Carregando...</div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeBtn">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <table id="modalTable"></table>
   </div>
-
-  <h2>Tucumã</h2>
-  <h3>Dados de Projeto da Usina</h3>
-
-<h1>Escala 4x4 Completa<br>Ero Brasil - Tucumã</h1>
-
-<div class="input-area">
-  <label for="dataInicio">Data inicial:</label>
-  <input type="date" id="dataInicio">
-</div>
-
-<table class="tabela" id="tabelaEscala">
-  <thead>
-    <tr>
-      <th>Data</th>
-      <th>Turma A</th>
-      <th>Turma B</th>
-      <th>Turma C</th>
-      <th>Turma D</th>
-    </tr>
-  </thead>
-  <tbody id="tabelaBody"></tbody>
-</table>
-
-<div class="creditos">
-  <h2>Créditos</h2>
-  <p><strong>Nome do App:</strong> Escala 4x4 Completa – Ero Brasil Tucumã</p>
-  <p><strong>Versão:</strong> 4.3</p>
-  <p><strong>Desenvolvido por:</strong> Alexandre Oliveira</p>
-  <p><strong>Ano:</strong> 2025</p>
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  const inputData = document.getElementById("dataInicio");
-  const corpo = document.getElementById("tabelaBody");
-
-  function parseSafeDate(dateString) {
-    // Safari no iPhone não reconhece "YYYY-MM-DD", mas aceita "YYYY/MM/DD"
-    return new Date(dateString.replace(/-/g, "/"));
-  }
-
-  function gerarEscala() {
-    const dataInput = inputData.value;
-    if (!dataInput) {
-      alert("Selecione uma data!");
-      return;
+// ---- Função de Parser ----
+function parseSections(text) {
+  const blocks = text.split(/\n{2,}/).map(b => b.trim()).filter(b => b);
+  return blocks.map(block => {
+    const lines = block.split(/\n/).map(l => l.trim()).filter(l => l);
+    const title = lines[0];
+    const props = {};
+    for (let i = 1; i < lines.length; i++) {
+      const kv = lines[i].split(/:(.+)/);
+      if (kv.length >= 2) {
+        props[kv[0].trim()] = kv[1].trim();
+      } else {
+        props[`Linha ${i}`] = lines[i];
+      }
     }
+    return { title, props };
+  });
+}
 
-    const dataEscolhida = parseSafeDate(dataInput);
-    corpo.innerHTML = "";
+// ---- Render Botões ----
+function renderButtons(sections) {
+  const container = document.getElementById("buttons");
+  container.innerHTML = sections.map((s, idx) =>
+    `<button class="section-btn" id="btn-${idx}" onclick="openModal(${idx})">${s.title}</button>`
+  ).join("");
+}
 
-    // formato compatível com iPhone
-    const referenciaInicio = new Date("2025/10/07");
+// ---- Modal ----
+let currentModalIdx = null;
+function openModal(idx) {
+  currentModalIdx = idx;
+  updateModalContent(idx);
+  document.getElementById("modal").style.display = "block";
+}
+function updateModalContent(idx) {
+  if (idx === null || !sections[idx]) return;
+  const sec = sections[idx];
+  document.getElementById("modalTitle").innerText = sec.title;
+  const rows = Object.entries(sec.props)
+    .map(([k,v]) => `<tr><td>${k}</td><td>${v}</td></tr>`)
+    .join("");
+  document.getElementById("modalTable").innerHTML = rows || "<tr><td colspan='2'>(sem dados estruturados)</td></tr>";
 
-    const basePattern = ["D", "D", "N", "N", "F", "F", "F", "F"];
-    const offsets = { A: 0, B: 2, C: 4, D: 6 };
-    const totalDias = 90;
-
-    for (let i = 0; i < totalDias; i++) {
-      const dia = new Date(dataEscolhida.getTime());
-      dia.setDate(dataEscolhida.getDate() + i);
-
-      const dataFormatada = dia.toLocaleDateString("pt-BR", {
-        weekday: 'short',
-        day: '2-digit',
-        month: '2-digit'
-      });
-
-      const diffDias = Math.floor((dia - referenciaInicio) / (1000 * 60 * 60 * 24));
-      const idx = ((diffDias % 8) + 8) % 8;
-
-      const statusA = basePattern[(idx + offsets.A) % 8];
-      const statusB = basePattern[(idx + offsets.B) % 8];
-      const statusC = basePattern[(idx + offsets.C) % 8];
-      const statusD = basePattern[(idx + offsets.D) % 8];
-
-      const linha = document.createElement("tr");
-      linha.innerHTML = `
-        <td><strong>${dataFormatada}</strong></td>
-        <td class="status-${statusA}">${statusA}</td>
-        <td class="status-${statusB}">${statusB}</td>
-        <td class="status-${statusC}">${statusC}</td>
-        <td class="status-${statusD}">${statusD}</td>
-      `;
-      corpo.appendChild(linha);
-    }
+  // Destaque no modal
+  if (currentModalIdx === idx) {
+    const modalContent = document.querySelector(".modal-content");
+    modalContent.classList.remove("highlight");
+    void modalContent.offsetWidth;
+    modalContent.classList.add("highlight");
   }
+}
+const closeModal = () => { document.getElementById("modal").style.display = "none"; currentModalIdx = null; };
+document.getElementById("closeBtn").onclick = closeModal;
+window.onclick = (e) => { if (e.target == document.getElementById("modal")) closeModal(); };
+window.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
 
-  // Define data padrão (hoje)
-  const hoje = new Date();
-  const ano = hoje.getFullYear();
-  const mes = String(hoje.getMonth() + 1).padStart(2, "0");
-  const dia = String(hoje.getDate()).padStart(2, "0");
-  inputData.value = `${ano}-${mes}-${dia}`;
+// ---- Carregar TXT do GitHub ignorando cache ----
+async function fetchData() {
+  try {
+    const cacheBuster = new Date().getTime();
+    const url = `https://raw.githubusercontent.com/afobelem-netizen/Projeto-Usina/main/DadosProjeto?cb=${cacheBuster}`;
+    const response = await fetch(url);
+    const text = await response.text();
+    return text;
+  } catch (err) {
+    console.error("❌ Erro ao carregar:", err);
+    return "";
+  }
+}
 
-  gerarEscala();
-  inputData.addEventListener("change", gerarEscala);
-});
+let sections = [];
+let lastText = "";
+
+// ---- Atualização automática ----
+async function updateData() {
+  const text = await fetchData();
+  if (text && text !== lastText) {
+    lastText = text;
+    sections = parseSections(text);
+    renderButtons(sections);
+    document.getElementById("errorMsg").innerText = "";
+
+    // Destaque nos botões
+    sections.forEach((_, idx) => {
+      const btn = document.getElementById(`btn-${idx}`);
+      if (btn) {
+        btn.classList.remove("highlight");
+        void btn.offsetWidth;
+        btn.classList.add("highlight");
+      }
+    });
+
+    // Atualiza modal aberto
+    if (currentModalIdx !== null) updateModalContent(currentModalIdx);
+
+    console.log("✅ Dados atualizados automaticamente");
+  } else if (!text) {
+    document.getElementById("buttons").innerHTML = "";
+    document.getElementById("errorMsg").innerText = "Não foi possível carregar os dados do TXT.";
+  }
+}
+
+// Primeira carga
+updateData();
+
+// Atualiza a cada 30 segundos
+setInterval(updateData, 30000);
 </script>
 
 </body>
+<footer style="text-align:center; margin-top:40px; font-size:16px; font-weight:bold; color:#2563eb;">
+  © 2025 - Desenvolvido por Alexandre Oliveira
+</footer>
 </html>
